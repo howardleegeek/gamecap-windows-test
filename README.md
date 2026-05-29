@@ -6,28 +6,28 @@ Windows test build for Minecraft Fabric capture.
 
 For non-technical Windows testers, use the EXE installer:
 
-[GameCap-Setup-v0.1.4.exe](https://github.com/howardleegeek/gamecap-windows-test/releases/download/v0.1.4/GameCap-Setup-v0.1.4.exe)
+[GameCap-Setup-v0.1.5.exe](https://github.com/howardleegeek/gamecap-windows-test/releases/download/v0.1.5/GameCap-Setup-v0.1.5.exe)
 
 Download it, double-click it, and it will automatically download the full package, verify SHA-256, install it under the Windows user directory, create a desktop `GameCap-Start.cmd` launcher, and open GameCap.
 
-This version avoids the Windows `WScript.Shell` shortcut creation issue seen in v0.1.3.
+This version avoids reinstall failure when an older GameCap `node.exe` is still running by installing into a new timestamped folder instead of deleting the old install directory.
 
 Installer SHA-256:
 
 ```text
-2b839c48c7826e7890fb71e067f9b0ae021eba056ccd317df71bde55dbdec1ad
+5c600ae015bb3d164f075d5dbdb835a89b35f9ecf6694d7b993a82e5f862fa4b
 ```
 
 ## Full Package
 
 Manual full package:
 
-[gamecap-windows-test-v0.1.4.zip](https://github.com/howardleegeek/gamecap-windows-test/releases/download/v0.1.4/gamecap-windows-test-v0.1.4.zip)
+[gamecap-windows-test-v0.1.5.zip](https://github.com/howardleegeek/gamecap-windows-test/releases/download/v0.1.5/gamecap-windows-test-v0.1.5.zip)
 
 Full package SHA-256:
 
 ```text
-52cee5044418195b49d8742caa3ccadac1e03b2c53425eb3b68f422fb996c3ac
+0aa39696650b7c2b02c7371ba245e7ce13df905cd2444335eac22f835c7942f6
 ```
 
 ## Tester Steps After Install
