@@ -4,22 +4,28 @@ Windows test build for Minecraft Fabric capture.
 
 ## Recommended Download
 
-For non-technical Windows testers, use the one-click installer:
+For non-technical Windows testers, use the EXE installer:
 
-[GameCap-OneClick-Setup-v0.1.1.cmd](https://github.com/howardleegeek/gamecap-windows-test/releases/download/v0.1.1/GameCap-OneClick-Setup-v0.1.1.cmd)
+[GameCap-Setup-v0.1.2.exe](https://github.com/howardleegeek/gamecap-windows-test/releases/download/v0.1.2/GameCap-Setup-v0.1.2.exe)
 
-Download it, double-click it, and it will automatically download the full package, install it under the Windows user directory, create a desktop shortcut, and open GameCap.
+Download it, double-click it, and it will automatically download the full package, verify SHA-256, install it under the Windows user directory, create a desktop shortcut, and open GameCap.
+
+Installer SHA-256:
+
+```text
+8f2d11b3e88bf936c1d105c61b81279b6f0f1d164ab7a36794cf462fa61e8a8e
+```
 
 ## Full Package
 
 Manual full package:
 
-[gamecap-windows-test-v0.1.1.zip](https://github.com/howardleegeek/gamecap-windows-test/releases/download/v0.1.1/gamecap-windows-test-v0.1.1.zip)
+[gamecap-windows-test-v0.1.2.zip](https://github.com/howardleegeek/gamecap-windows-test/releases/download/v0.1.2/gamecap-windows-test-v0.1.2.zip)
 
-SHA-256:
+Full package SHA-256:
 
 ```text
-f2b8d3141811628417e2ea94145e09fbc353661fcb05d3fcd21d6fe7bdb7a101
+56abf7805f7d9b9dcba60dda5567b52ef91097831bd6ecf49dd7e0669920b05b
 ```
 
 ## Tester Steps After Install
