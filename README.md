@@ -6,37 +6,38 @@ Windows test build for Minecraft Fabric capture.
 
 For non-technical Windows testers, use the EXE installer:
 
-[GameCap-Setup-v0.1.6.exe](https://github.com/howardleegeek/gamecap-windows-test/releases/download/v0.1.6/GameCap-Setup-v0.1.6.exe)
+[GameCap-Setup-v0.1.7.exe](https://github.com/howardleegeek/gamecap-windows-test/releases/download/v0.1.7/GameCap-Setup-v0.1.7.exe)
 
-Download it, double-click it, and it will automatically download the full package, verify SHA-256, install it under the Windows user directory, create a desktop `GameCap-Start.cmd` launcher, and open GameCap.
+Download it and double-click it. It will download the full package, verify SHA-256, install under the Windows user directory, create a desktop `GameCap-Start.cmd` launcher, open GameCap, then GameCap will try to auto-open OBS Studio and Minecraft Launcher.
 
-This version is the Minecraft Java `1.21.4` + Fabric Loader `0.16.10` compatibility build. It bundles `fabric-api-0.119.4+1.21.4.jar` and the rebuilt GameCap Fabric mod.
+This version is the foolproof Windows tester build for Minecraft Java `1.21.4` + Fabric Loader `0.16.10`. It bundles `fabric-api-0.119.4+1.21.4.jar` and the rebuilt GameCap Fabric mod.
 
 Installer SHA-256:
 
 ```text
-83d5b653e4c15bc65399b92825159b7d94bfda4e0e7014fff70691ea14785b32
+63c3b581f8da5844082f3003eea7bcbabbdcfdd2c3d502a6d9d7b9d8bb91b59d
 ```
 
 ## Full Package
 
 Manual full package:
 
-[gamecap-windows-test-v0.1.6.zip](https://github.com/howardleegeek/gamecap-windows-test/releases/download/v0.1.6/gamecap-windows-test-v0.1.6.zip)
+[gamecap-windows-test-v0.1.7.zip](https://github.com/howardleegeek/gamecap-windows-test/releases/download/v0.1.7/gamecap-windows-test-v0.1.7.zip)
 
 Full package SHA-256:
 
 ```text
-905d5191accad3a1e5439f4ce0ae1c772a8ffcb4c27dca9c2212e9d546aa40dd
+22a1e7035d18b6a5cd682ffe58e84e9cdcf9de3c0e5743d1be1954013b3a9c1c
 ```
 
 ## Tester Steps After Install
 
-1. Start OBS Studio with WebSocket enabled on port `4455`.
-2. Start Minecraft Java `1.21.4` with Fabric Loader `0.16.10`, usually shown as the `fabric-loader-1.21.4` profile.
-3. Open GameCap from `GameCap-Start.cmd` on the desktop.
-4. Click `1. 安装/检查 Fabric Mod`.
-5. Click `3. 检查 OBS / 服务`.
-6. Click `开始 5 分钟录制`.
+1. Run `GameCap-Setup-v0.1.7.exe`.
+2. GameCap auto-installs the mod jars, starts the local Processor, opens OBS Studio, and opens Minecraft Launcher.
+3. In Minecraft Launcher, choose `fabric-loader-1.21.4`, click Play, and enter a world.
+4. Return to GameCap and click `我已进入世界，开始 5 分钟录制`.
+5. After recording, click `打开录制结果` and `打开处理结果` and send the output back.
+
+If OBS or Minecraft does not open automatically, click `一键准备：打开 OBS + 打开 Minecraft` inside GameCap.
 
 The package bundles Windows `node.exe`, Windows `ffprobe.exe`, GameCap Fabric mod, and Fabric API; testers do not need Node.js, npm, or command-line usage.
