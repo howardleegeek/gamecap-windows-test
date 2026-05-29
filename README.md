@@ -6,16 +6,16 @@ Windows test build for Minecraft Fabric capture.
 
 For non-technical Windows testers, use this full offline EXE installer:
 
-GameCap-Full-Setup-v0.1.11.exe
-https://github.com/howardleegeek/gamecap-windows-test/releases/download/v0.1.11/GameCap-Full-Setup-v0.1.11.exe
+GameCap-Full-Setup-v0.1.12.exe
+https://github.com/howardleegeek/gamecap-windows-test/releases/download/v0.1.12/GameCap-Full-Setup-v0.1.12.exe
 
 Download it once and double-click it. The full GameCap package is embedded inside this EXE, so there is no second zip/package download during installation.
 
-This version bundles OBS Studio portable directly into GameCap, skips the OBS first-run streaming and Twitch setup wizard, and closes any old OBS window before starting the bundled OBS. Testers do not need to install OBS separately or log in to Twitch. Minecraft itself is not bundled because it requires Microsoft and Mojang licensing plus user login, but GameCap opens Minecraft Launcher and installs the Fabric mod jars.
+This version bundles OBS Studio portable directly into GameCap, skips the OBS first-run streaming and Twitch setup wizard, closes old OBS before starting the bundled OBS, and records as a local MP4 with desktop audio. Testers do not need to install OBS separately or log in to Twitch. Minecraft itself is not bundled because it requires Microsoft and Mojang licensing plus user login, but GameCap opens Minecraft Launcher and installs the Fabric mod jars.
 
 Installer SHA-256:
 
-7318f6c0bf4bbbf3286d2623752cc45b44b923f7e98063aa1fae134897180e16
+ee9188f9b37eafc8c6524677af84eb76cf83af41abf4f41b4b1c3c0a8fe661a8
 
 ## Included
 
@@ -28,7 +28,7 @@ Installer SHA-256:
 
 ## Tester Steps After Install
 
-1. Run GameCap-Full-Setup-v0.1.11.exe.
+1. Run GameCap-Full-Setup-v0.1.12.exe.
 2. GameCap auto-installs the mod jars, starts the local Processor, opens bundled OBS Studio, and opens Minecraft Launcher.
 3. In Minecraft Launcher, choose fabric-loader-1.21.4, click Play, and enter a world.
 4. Return to GameCap and click 我已进入世界，开始 5 分钟录制.
