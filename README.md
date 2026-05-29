@@ -6,16 +6,16 @@ Windows test build for Minecraft Fabric capture.
 
 For non-technical Windows testers, use this full offline EXE installer:
 
-GameCap-Full-Setup-v0.1.12.exe
-https://github.com/howardleegeek/gamecap-windows-test/releases/download/v0.1.12/GameCap-Full-Setup-v0.1.12.exe
+GameCap-Full-Setup-v0.1.14.exe
+https://github.com/howardleegeek/gamecap-windows-test/releases/download/v0.1.14/GameCap-Full-Setup-v0.1.14.exe
 
 Download it once and double-click it. The full GameCap package is embedded inside this EXE, so there is no second zip/package download during installation.
 
-This version bundles OBS Studio portable directly into GameCap, skips the OBS first-run streaming and Twitch setup wizard, closes old OBS before starting the bundled OBS, and records as a local MP4 with desktop audio. Testers do not need to install OBS separately or log in to Twitch. Minecraft itself is not bundled because it requires Microsoft and Mojang licensing plus user login, but GameCap opens Minecraft Launcher and installs the Fabric mod jars.
+This version bundles OBS Studio portable directly into GameCap, skips the OBS first-run streaming and Twitch setup wizard, closes old OBS before starting the bundled OBS, records local MP4 with desktop audio, adds one-click diagnostics, and tries to install Fabric Loader 0.16.10 for Minecraft 1.21.4 automatically when Java is available. Testers do not need to install OBS separately or log in to Twitch. Minecraft itself is not bundled because it requires Microsoft and Mojang licensing plus user login, but GameCap opens Minecraft Launcher and installs the Fabric mod jars.
 
 Installer SHA-256:
 
-ee9188f9b37eafc8c6524677af84eb76cf83af41abf4f41b4b1c3c0a8fe661a8
+6003f43a72b3d59e995f8b56ba754747cdd4b68c0bcb11d4068d7d4394270e9d
 
 ## Included
 
@@ -25,15 +25,15 @@ ee9188f9b37eafc8c6524677af84eb76cf83af41abf4f41b4b1c3c0a8fe661a8
 - OBS Studio 32.1.2 Windows x64 portable runtime.
 - GameCap Minecraft Fabric mod.
 - Fabric API 0.119.4+1.21.4.
+- One-click diagnostic zip collection.
 
 ## Tester Steps After Install
 
-1. Run GameCap-Full-Setup-v0.1.12.exe.
-2. GameCap auto-installs the mod jars, starts the local Processor, opens bundled OBS Studio, and opens Minecraft Launcher.
+1. Run GameCap-Full-Setup-v0.1.14.exe.
+2. GameCap auto-installs the mod jars, tries to install Fabric Loader, starts the local Processor, opens bundled OBS Studio, and opens Minecraft Launcher.
 3. In Minecraft Launcher, choose fabric-loader-1.21.4, click Play, and enter a world.
 4. Return to GameCap and click 我已进入世界，开始 5 分钟录制.
 5. After recording, click 打开录制结果 and 打开处理结果 and send the output back.
-
-If OBS or Minecraft does not open automatically, click 一键准备：打开 OBS + 打开 Minecraft inside GameCap.
+6. If anything fails, click 一键诊断打包 and send diagnostics/GameCap-Diagnostic-*.zip.
 
 Testers do not need OBS installation, Twitch login, livestream setup, Node.js, npm, command-line usage, or manual zip extraction.
